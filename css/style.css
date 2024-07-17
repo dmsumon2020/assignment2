@@ -76,3 +76,12 @@ header{
 	font-style: italic;
 }
 /* logo styles end here  */
+
+/* banner section styles start */
+.banner-texts h3{
+    color: #fff;
+}
+.banner-texts p{
+    color: rgba(255, 255, 255, 0.50);
+}
+/* banner section styles end */
