@@ -10,3 +10,69 @@
     font-variation-settings:
       "slnt" 0;
   }
+
+/* shared styles start here */
+:root{
+    --primary-color: #E6533C;
+}
+.primary-color{
+     color: var(--primary-color);
+}
+.display-flex {
+	display: flex;
+	align-items: center;
+}
+.wrapper{
+    max-width: 75%;
+    margin: 0 auto;
+}
+.btn-primary {
+	background-color: var(--primary-color);
+	padding: 8px 20px;
+	font-weight: 600;
+	border-radius: 45px;
+}
+/* shared styles end here */
+
+/* header section styles start here  */
+header{
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);    
+    background: #000;;
+}
+/* header section styles end here  */
+
+/* navigation section styles starts here */
+.nav-bar{
+    max-width: 75%;
+    margin: 0 auto;
+}
+.nav-bar .nav-bar-wrapper {
+	justify-content: space-between;
+	padding: 3.5rem 11.5rem;
+}
+.nav-bar .nav-links{
+    list-style: none;
+}
+.nav-bar .nav-links li {
+	margin-right: 3rem;
+}
+.nav-bar .nav-links li:last-child{
+    margin-right: 0;
+}
+.nav-bar .nav-links li a {
+	text-decoration: none;
+	color: #fff;
+	display: inline-block;
+	font-size: 1.2rem;
+	line-height: 120%;
+}
+/* navigation section styles ends here */
+
+/* logo styles start here  */
+#logo {
+	font-size: 2.25rem;
+	line-height: 120%;
+	font-weight: 800;
+	font-style: italic;
+}
+/* logo styles end here  */
