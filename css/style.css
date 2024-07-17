@@ -25,6 +25,7 @@
 .display-flex {
 	display: flex;
 	align-items: center;
+    justify-content: space-between;
 }
 .wrapper{
     max-width: 75%;
@@ -32,11 +33,23 @@
 }
 .btn-primary {
 	background-color: var(--primary-color);
-	padding: 8px 20px;
-	font-weight: 600;
 	border-radius: 45px;
-    padding: 16px 48px;
-    border: none;
+	padding: 16px 48px;
+	border: 1px solid var(--primary-color)aliceblue;
+	color: #fff;
+	font-size: 1.12rem;
+	line-height: 1.37rem;
+	font-weight: 600;
+}
+.btn-secondary {
+	background-color: transparent;
+	border-radius: 45px;
+	padding: 16px 48px;
+	border: 1px solid #fff;
+	color: #fff;
+	font-size: 1.12rem;
+	line-height: 1.37rem;
+	font-weight: 600;
 }
 .banner-texts h3 {
 	color: #fff;
@@ -103,16 +116,27 @@ header{
 /* logo styles end here  */
 
 /* banner section styles start */
+.banner-texts{
+    max-width: 50%;
+}
 .banner-texts h3 {
 	color: #fff;
-	font-size: 78px;
+	font-size: 4.87rem;
 	font-weight: 900;
 	line-height: 120%;
+}
+.banner-texts h3 span {
+	font-family: 'miamaregular';
+	font-weight: normal;
+	font-size: 10rem;
 }
 .banner-texts p {
 	font-size: 1rem;
 	letter-spacing: 0.5px;
     margin-top: 28px;
     margin-bottom: 28px;
+}
+.banner-texts .btn-primary{
+    margin-right: 14px;
 }
 /* banner section styles end */
