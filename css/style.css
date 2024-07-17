@@ -1,7 +1,7 @@
-* {
-    margin: 0;
-    padding: 0;
-  }
+/*importing miama font*/
+@import url('../miama-font/miama.css');
+
+/*google font class*/
 .inter-font {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -10,8 +10,12 @@
     font-variation-settings:
       "slnt" 0;
   }
+  * {
+    margin: 0;
+    padding: 0;
+  }
 
-/* shared styles start here */
+  /* shared styles start here */
 :root{
     --primary-color: #E6533C;
 }
@@ -31,6 +35,21 @@
 	padding: 8px 20px;
 	font-weight: 600;
 	border-radius: 45px;
+    padding: 16px 48px;
+    border: none;
+}
+.banner-texts h3 {
+	color: #fff;
+	font-size: 5rem;
+	font-weight: 900;
+	line-height: 120%;
+}
+.text-paragraph {
+	color: rgba(255, 255, 255, 0.50);
+	font-size: 0.87rem;
+	line-height: 1.5rem;
+	letter-spacing: 0.3px;
+    margin-top: 14px;
 }
 /* shared styles end here */
 
@@ -42,7 +61,7 @@ header{
 /* header section styles end here  */
 
 /* navigation section styles starts here */
-.nav-bar{
+.nav-bar, .banner{
     max-width: 75%;
     margin: 0 auto;
 }
@@ -66,6 +85,12 @@ header{
 	font-size: 1.2rem;
 	line-height: 120%;
 }
+.nav-bar .nav-links li.current a {
+	background-color: var(--primary-color);
+	padding: 8px 20px;
+	font-weight: 600;
+	border-radius: 45px;
+}
 /* navigation section styles ends here */
 
 /* logo styles start here  */
@@ -78,10 +103,16 @@ header{
 /* logo styles end here  */
 
 /* banner section styles start */
-.banner-texts h3{
-    color: #fff;
+.banner-texts h3 {
+	color: #fff;
+	font-size: 78px;
+	font-weight: 900;
+	line-height: 120%;
 }
-.banner-texts p{
-    color: rgba(255, 255, 255, 0.50);
+.banner-texts p {
+	font-size: 1rem;
+	letter-spacing: 0.5px;
+    margin-top: 28px;
+    margin-bottom: 28px;
 }
 /* banner section styles end */
