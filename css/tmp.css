@@ -1,480 +1,82 @@
-/*importing miama font*/
-@import url('../miama-font/miama.css');
-
-/*google font class*/
-.inter-font {
-    font-family: "Inter", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: normal;
-    font-style: normal;
-    font-variation-settings:
-      "slnt" 0;
-  }
-  * {
-    margin: 0;
-    padding: 0;
-  }
-
-  /* shared styles start here */
-:root{
-    --primary-color: #E6533C;
-	--primary-text-color: rgba(255, 255, 255, 0.50);
+.challenge-grid{
+	max-width: 100%;
+	margin: 0;
 }
-body{
-	background-color: #000;
-	color: var(--primary-text-color);
+.challenge-grid .challenge-grid-wrapper {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	row-gap: 0;
+	column-gap: 0;
 }
-.primary-color{
-     color: var(--primary-color);
-}
-.display-flex {
+.challenge-grid article {
 	display: flex;
 	align-items: center;
-    justify-content: space-between;
+	justify-content: center;
+	flex-direction: row;
+	background-color: #E6533C;
+	max-height: 470px;
+	overflow: hidden;
 }
-.wrapper{
-    max-width: 75%;
-    margin: 0 auto;
+.challenge-grid article.row-reverse {
+	flex-direction: row-reverse;
 }
-.btn-primary {
-	background-color: var(--primary-color);
-	border-radius: 45px;
-	padding: 16px 48px;
-	border: 1px solid var(--primary-color)aliceblue;
-	color: #fff;
-	font-size: 1.12rem;
-	line-height: 1.37rem;
-	font-weight: 600;
+.challenge-grid article.bg-black{
+	background-color: #000;
+}  
+.challenge-grid article .content .content-wrapper{
+	padding: 4rem;
 }
-.btn-secondary {
-	background-color: transparent;
-	border-radius: 45px;
-	padding: 16px 48px;
-	border: 1px solid #fff;
-	color: #fff;
-	font-size: 1.12rem;
-	line-height: 1.37rem;
-	font-weight: 600;
-}
-.text-description {
+.challenge-grid article .content h5{
 	color: var(--primary-text-color);
-	font-size: 0.87rem;
-	line-height: 1.5rem;
-	letter-spacing: 0.3px;
-    margin-top: 14px;
-	text-align: center;
+	text-transform: uppercase;
 }
-h1, h2, h3, h4, h5, h6{
-    color: #fff;
-}
-img{
-    max-width: 100%;
-    height: auto;
-}
-.section-title {
-	font-size: 3rem;
-	line-height: 120%;
-	font-weight: 900;
-	text-align: center;
-}
-/* shared styles end here */
-
-/* header section styles start here  */
-header {
-	background: #111;
-}
-
-/* header section styles end here  */
-
-/* navigation section styles starts here */
-.nav-bar, .banner{
-    max-width: 75%;
-    margin: 0 auto;
-}
-.nav-bar .nav-bar-wrapper {
-	justify-content: space-between;
-	padding: 3.5rem 11.5rem;
-}
-.nav-bar .nav-links {
-	list-style: none;
-	border: 1px solid rgba(255, 255, 255, 0.1);
-	border-radius: 39px;
-	padding: 5px;
-}
-.nav-bar .nav-links li {
-	margin-right: 3rem;
-}
-.nav-bar .nav-links li:last-child{
-    margin-right: 1rem;
-}
-.nav-bar .nav-links li a {
-	text-decoration: none;
-	color: #fff;
-	display: inline-block;
-	font-size: 1.2rem;
-	line-height: 120%;
-}
-.nav-bar .nav-links li.current a {
-	background-color: var(--primary-color);
-	padding: 8px 20px;
-	font-weight: 600;
-	border-radius: 45px;
-}
-/* navigation section styles ends here */
-
-/* logo styles start here  */
-#logo {
-	font-size: 2.25rem;
-	line-height: 120%;
-	font-weight: 800;
-	font-style: italic;
-}
-/* logo styles end here  */
-
-/* banner section styles start */
-.banner-texts{
-    max-width: 50%;
-}
-.banner-texts h3 {
-	font-size: 4.87rem;
-	font-weight: 900;
-	line-height: 120%;
-}
-.banner-texts h3 span {
-	font-family: 'miamaregular';
-	font-weight: normal;
-	font-size: 10rem;
-}
-.banner-texts p {
-	font-size: 1rem;
-	letter-spacing: 0.5px;
-	margin-top: 28px;
-	margin-bottom: 28px;
-	text-align: left;
-}
-.banner-texts .btn-primary{
-    margin-right: 14px;
-}
-.banner-image{
-    position: relative;
-}
-.banner-image .free-workout-videos,
-.banner-image .video-tutorial {
-	background: rgba(255, 255, 255, 0.1);
-	border: 1px solid rgba(255, 255, 255, 0.1);
-	border-radius: 12px;
-	backdrop-filter: blur(20px);
-	padding: 1rem 1.5rem;
-	position: absolute;
-}
-.banner-image .free-workout-videos{
-	top: 23%;
-	right: -21%;
-}
-.banner-image .video-tutorial{
-	left: -30%;
-	bottom: 10%;
-}
-.banner-image .free-workout-videos h4{
-    color: #fff;
-    font-size: 2.5rem;
-    line-height: 2.5rem;
-    font-weight: 900;
-    letter-spacing: 1px;
-}
-.banner-image .free-workout-videos p{
-    color: rgba(255, 255, 255, 0.65);
-    font-size: 0.81rem;
-    line-height: 1.25rem;
-    letter-spacing: 1px;
-    margin-top: 5px;
-}
-.banner-image .video-tutorial i {
-	color: #fff;
-	background-color: var(--primary-color);
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
-	text-align: center;
-	line-height: 40px;
-	margin-right: 12px;
-}
-.banner-image .video-tutorial h5 {
-    color: #FAFAF9;
+.challenge-grid article .content h4 {
 	font-size: 1.5rem;
-	line-height: 1.5rem;
-    font-weight: 900;
-	letter-spacing: 0.3px;
+	margin-top: 1rem;
+	margin-bottom: 1.5rem;
 }
-.banner-image .video-tutorial p{
-    color: rgba(239, 237, 232, 0.65);
-    font-size: 1rem;
-    line-height: 1.5rem;
-    letter-spacing: 0.5px;
-    margin-top: 8px;
+.challenge-grid article .content p{
+	margin-bottom: 1rem;
 }
-/* banner section styles end */
-
-/* main section start  */
-section, .footer .footer-wrapper {
-	max-width: 75%;
-	margin: 6.25rem auto;
-}
-/* main section end  */
-
-/* change your habits section start  */
-
-.change-your-habits .habits {
-	margin-top: 3.5rem;
-	gap: 50px;
-	margin-bottom: 6.25rem;
-}
-.change-your-habits .habits .habit{
-    flex-direction: column;
-}
-.change-your-habits .habits .habit img {
-	border-radius: 50%;
-	border: 4px solid rgba(255, 255, 255, 0.1);
-}
-.change-your-habits .habits .habit h4 {
-	margin-top: 1.5rem;
-}
-.change-your-habits .habits .habit .text-description{
-	margin-top: 6px;
-}
-/* change your habits section end  */
-
-/* run an extra mile section start */
-.run-an-extra-mile .run-an-extra-mile-wrapper {
-	display: grid;
-	grid-template-columns: calc(43% - 10rem) calc(57% - 10rem);
-	justify-content: space-between;
-	align-items: center;
-	background: #222222;
-	padding: 3rem 4rem;
-	border-radius: 18px;
-	gap: 20rem;
-	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
-.run-an-extra-mile .run-an-extra-mile-wrapper .section-title,
-.run-an-extra-mile .run-an-extra-mile-wrapper .text-description{
-    text-align: left;
-}
-.run-an-extra-mile .run-an-extra-mile-wrapper .text-description {
-	margin-bottom: 2rem;
-}
-.run-an-extra-mile .run-an-extra-mile-wrapper img{
-    border-radius: 18px;
-}
-/* run an extra mile section end */
-
-/* bmi-calculator-heading section start */
-
-.bmi-calculator-heading .section-title,
-.bmi-calculator-heading .text-description{
-	text-align: left;
-}
-.bmi-calculator-heading{
-	max-width: 50%;
-}
-
-/* bmi-calculator-heading section end */
-
-/* bmi-calculator section start  */
-
-section.bmi-calculator {
-	background: #222;
-	max-width: 100%;
-	margin: 6.25rem 0;
-}
-.bmi-calculator-wrapper {
-	max-width: 75%;
-	margin: 0 auto;
-	padding-top: 3.25rem;
-	padding-bottom: 3.25rem;
-}
-.bmi-calculator-wrapper-inner{
-	align-items: flex-start;
-}
-.bmi-calculator-wrapper h4{
-	font-size: 1.75rem;
-	line-height: 120%;
-	font-weight: 900;
-}
-
-/* bmi-calculator section end  */
-
-/* BMI Calculator Chart/ table start */
-.bmi-calculator-chart{
-	flex: 1;
-}		
-table.weight-chart{
-	border-collapse: collapse;	
-	margin-top: 3.25rem;
-}
-table.weight-chart td, 
-table.weight-chart th {
-	border: 1px solid rgba(255, 255, 255, 0.1);
-	padding: 13px 18px;
-}	
-/* BMI Calculator Chart/ table end */
-
-/* BMI Calculate/ form start */
-.bmi-calculate{
-	flex: 2;
-}
-.bmi-calculate .text-description{
-	text-align: left;
-	margin-bottom: 2rem;
-}	
-.bmi-calculate input[type="text"], .bmi-calculate select {
-	padding: 16px 40px 16px 20px;
-	width: calc(50% - 9px);
-	box-sizing: border-box;
-	margin-bottom: 12px;
-	border-radius: 8px;
-	background: #383837;
-	color: rgba(255, 255, 255, 0.6);
-	font-size: 1rem;
-	border: 1px solid #383837;
-}
-.bmi-calculate select{
-	appearance: none;
-}
-.bmi-calculate #activity {
-	width: 100%;
-}
-.bmi-calculate #height,
-.bmi-calculate #age{
-	margin-right: 12px;
-}
-.bmi-calculate .btn-primary{
-	display: block;
-	margin-top: 2rem;
-}
-.bmi-calculate input[type="text"]:focus-visible,
-.bmi-calculate select:focus-visible{
-	outline: none;
-}
-/* BMI Calculate/ form end */
-
-/* meet our team section starts */
-.meet-our-team .team-members {
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-template-rows: repeat(2, 20vw);
-	grid-gap: 20px;
-	background-color: rgba(255, 255, 255, 0.1);
-	padding: 20px;
-	border-radius: 18px;
-	margin-top: 3.5rem;
-}
-.meet-our-team .team-members .team-member{
+.challenge-grid article .content .read-more{
 	position: relative;
 }
-.meet-our-team .team-members .team-member figure{
-	height: 100%;
-	width: 100%;
-}
-.meet-our-team .team-members .team-member .overlay::before { /*CSS rule to put a shadow over images*/
-	content: '';
-	z-index: 10;
-	width: 100%;
-	height: 100%;
-	display: block;
-	position: absolute;
-	background: rgba(0, 0, 0, 0.2);
-}
-.meet-our-team .team-members .team-member img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	border-radius: 18px;
-}
-.meet-our-team .team-members .team-member .member-info {
-	position: absolute;
-	bottom: 5%;
-	left: 5%;
-}
-.meet-our-team .team-members .team-member .member-info h4 {
-	font-size: 1.25rem;
-	line-height: 120%;
-	font-weight: 900;
-}
-.meet-our-team .team-members .team-member .member-info p{
-	font-size: 0.88rem;
-	line-height: 120%;
-	color: rgba(255, 255, 255, 0.5);
-}
-/* meet our team section end */
-
-
-/* footer section starts */
-.footer{
-	background-color: rgba(255, 255, 255, 0.1);
-}
-.footer-logo #footer-logo{
-	font-size: 4.5rem;
-	line-height: 120%;
-	font-weight: 900;
-	font-style: italic;
-}
-.footer .footer-wrapper {
-	margin: 6.25rem auto 0 auto;
-}
-.footer .footer-wrapper {
-	display: flex;
-	justify-content: space-between;
-	padding-top: 4rem;
-	padding-bottom: 4rem;
-	border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-.footer .footer-wrapper .footer-logo .text-description{
-	text-align: left;
-	margin-top: 20px;
-}	
-.footer .footer-wrapper .footer-links h5{
-	font-size: 2rem;
-	line-height: 120%;
-	font-weight: 800;
-	margin-bottom: 2.5rem;
-}
-.footer .footer-wrapper .footer-links ul{
-	list-style: none;
-}
-.footer .footer-wrapper .footer-links ul li{
-	font-size: 1.5rem;
-	line-height: 120%;
-	margin-bottom: 20px;
-}
-.footer .footer-wrapper .footer-links ul li:last-child{
-	margin-bottom: 0;
-}
-.footer .footer-wrapper .footer-links ul li a{
+.challenge-grid article .content a {
 	text-decoration: none;
-	color: var(--primary-text-color);
+	color: #fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 0.8rem;
 }
-.footer-copyrights {
-	text-align: center;
-	padding-top: 2rem;
-	padding-bottom: 2rem;
-	font-size: 1.25rem;
-	line-height: 1.5rem;
-	letter-spacing: 0.3px;
+.challenge-grid article .content a::after {
+	content: '';
+	position: absolute;
+	top: calc(100% + 4px);
+	left: 0;
+	height: 1px;
+	width: 4px;
+	border: 2px solid;
+	border-color: #fff;
+	background-color: #fff;
+	transition: width .3s ease-out;
 }
-/* footer section ends */
-.bmi-calculate select{
-	appearance: none;
+.challenge-grid article .content span:hover a::after{
+	width: 100%;
 }
-
-
-
-
-
-
-
-
-
-
-
-
+.challenge-grid article .media{
+	max-width: 100%;
+	height: auto;
+}
+.challenge-grid article .media a{
+	display: block;
+}
+.challenge-grid article .media a img{
+	transition: transform .6s ease;
+}
+.challenge-grid article .media a:hover img{
+	transform: scale(1.05);
+}
+.challenge-grid article .content,
+.challenge-grid article .media {
+  flex: 1; /* This will make both .content and .media take up equal space */
+}
