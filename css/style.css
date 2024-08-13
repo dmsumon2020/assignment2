@@ -346,9 +346,10 @@ table.weight-chart th {
 .bmi-calculate #age{
 	margin-right: 12px;
 }
-.bmi-calculate .btn-primary{
+.bmi-calculate .btn-primary {
 	display: block;
 	margin-top: 2rem;
+	padding: 20px 90px;
 }
 .bmi-calculate input[type="text"]:focus-visible,
 .bmi-calculate select:focus-visible{
@@ -518,8 +519,12 @@ table.weight-chart th {
 	/* banner section ends */
 
 	/* Run an Extra Mile Easily section starts */
+	.change-your-habits .habits {
+		margin-bottom: 4rem;
+	}
 	section, .footer .footer-wrapper {
 		max-width: 90%;
+		margin: 2rem auto;
 	}
 	.run-an-extra-mile .run-an-extra-mile-wrapper {
 		padding: 3rem 1.5rem;
@@ -532,4 +537,27 @@ table.weight-chart th {
 	}
 	/* Run an Extra Mile Easily section ends */
 	
+	/* bmi calculator section starts */
+	.bmi-calculator-wrapper {
+		max-width: 90%;
+		padding: 2rem 0;
+	}	
+	.bmi-calculator-wrapper-inner {
+		align-items: center;
+		flex-direction: column;
+	}	
+	.bmi-calculator-wrapper h4{
+		font-size: 1rem;
+	}
+	.bmi-calculate{
+		margin-top: 42px;
+	}
+	table.weight-chart {
+		margin-top: 23px;
+	}
+	section.bmi-calculator {
+		margin: 4rem 0;
+	}
+	/* bmi calculator section ends */
+
 }
