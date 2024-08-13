@@ -96,6 +96,9 @@ header {
 	justify-content: space-between;
 	padding: 3.5rem 11.5rem;
 }
+.nav-bar .nav-bar-wrapper i{
+	display: none;
+}
 .nav-bar .nav-links {
 	list-style: none;
 	border: 1px solid rgba(255, 255, 255, 0.1);
@@ -469,6 +472,9 @@ table.weight-chart th {
 	/* CSS rules for small devices go here */
 
 	/* common styles  starts*/
+	html{
+		overflow-x: hidden;
+	}
 	.display-flex {
 		flex-direction: column;
 	}
@@ -480,6 +486,20 @@ table.weight-chart th {
 		font-size: 2rem;
 	}
 	/* common styles  ends*/
+
+	/* nav bar section starts  */
+	.nav-bar .nav-bar-wrapper {
+		flex-direction: row;
+		padding: 3.5rem 2rem;
+	}
+	.nav-bar .nav-bar-wrapper i{
+		display: block;
+		color: #fff;
+	}
+	.nav-bar .nav-links{
+		display: none;
+	}
+	/* nav bar section ends  */
 
 	/* banner section starts */
 	.nav-bar, .banner {
@@ -559,5 +579,20 @@ table.weight-chart th {
 		margin: 4rem 0;
 	}
 	/* bmi calculator section ends */
+
+	/* Meet Our Team section starts  */
+	.meet-our-team .team-members {
+		grid-template-columns: 1fr; /* Changed to one column */
+		grid-template-rows: 1fr;
+	  }
+	  
+	/* Meet Our Team section ends  */
+
+	/* footer section starts */
+	.footer .footer-wrapper {
+		flex-direction: column;
+		gap: 30px;
+	}
+	/* footer section ends */
 
 }
