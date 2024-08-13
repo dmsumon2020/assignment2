@@ -467,12 +467,18 @@ table.weight-chart th {
 @media (max-width: 576px) {
 	/* CSS rules for small devices go here */
 
+	/* common styles  starts*/
 	.display-flex {
 		flex-direction: column;
 	}
 	.wrapper {
 		max-width: 100%;
 	}
+
+	.section-title {
+		font-size: 2rem;
+	}
+	/* common styles  ends*/
 
 	/* banner section starts */
 	.nav-bar, .banner {
@@ -500,12 +506,30 @@ table.weight-chart th {
 		left: -4%;
 		bottom: 26%;
 		flex-direction: row;
+		padding: 1rem;
+	}
+	.banner-image .free-workout-videos {
+		right: -9%;
+		padding: 0.5rem 0.7rem;
+	}
+	.banner-image .free-workout-videos h4 {
+		font-size: 2rem;
 	}
 	/* banner section ends */
+
+	/* Run an Extra Mile Easily section starts */
+	section, .footer .footer-wrapper {
+		max-width: 90%;
+	}
+	.run-an-extra-mile .run-an-extra-mile-wrapper {
+		padding: 3rem 1.5rem;
+		grid-template-columns: 1fr;
+		justify-content: center;
+		gap: 30px;
+	}
+	.run-an-extra-mile .run-an-extra-mile-wrapper .btn-primary{
+		width: 100%;
+	}
+	/* Run an Extra Mile Easily section ends */
+	
 }
-  
-
-
-
-
-
