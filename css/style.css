@@ -338,9 +338,6 @@ table.weight-chart th {
 	font-size: 1rem;
 	border: 1px solid #383837;
 }
-.bmi-calculate select{
-	appearance: none;
-}
 .bmi-calculate #activity {
 	width: 100%;
 }
@@ -463,3 +460,11 @@ table.weight-chart th {
 	letter-spacing: 0.3px;
 }
 /* footer section ends */
+
+
+
+
+
+
+
+

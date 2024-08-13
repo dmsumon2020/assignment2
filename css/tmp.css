@@ -463,6 +463,13 @@ table.weight-chart th {
 	letter-spacing: 0.3px;
 }
 /* footer section ends */
+.bmi-calculate select{
+	appearance: none;
+}
+
+
+
+
 
 
 
