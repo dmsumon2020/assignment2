@@ -81,10 +81,9 @@ img{
 /* shared styles end here */
 
 /* header section styles start here  */
-header {
-	background: #111;
+header{
+	background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
 }
-
 /* header section styles end here  */
 
 /* navigation section styles starts here */
