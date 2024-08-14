@@ -371,9 +371,9 @@ section, .footer .footer-wrapper {
 }
 .challenge-grid article .media a {
 	display: block;
-	height: 100%; 
+	height: 100%;
+	overflow: hidden;
 }
-
 .challenge-grid article .media a img {
 	width: 100%; 
 	height: 100%; 
@@ -456,6 +456,14 @@ table.weight-chart th {
 	color: rgba(255, 255, 255, 0.6);
 	font-size: 1rem;
 	border: 1px solid #383837;
+}
+.bmi-calculate select{
+    appearance: none;
+    background-image: url('../images/chevron-down.png');
+    background-repeat: no-repeat;
+    background-position: right 10px top 50%;
+    background-size: 18px;
+    padding-right: 20px;
 }
 .bmi-calculate #activity {
 	width: 100%;
@@ -570,6 +578,10 @@ table.weight-chart th {
 .footer .footer-wrapper .footer-links ul li a{
 	text-decoration: none;
 	color: var(--primary-text-color);
+	transition: color 0.5s ease;
+}
+.footer .footer-wrapper .footer-links ul li a:hover{
+	color: var(--primary-color);
 }
 .footer-copyrights {
 	text-align: center;
@@ -698,6 +710,9 @@ table.weight-chart th {
 	/* challenge-grid ends  */
 
 	/* bmi calculator section starts */
+	.bmi-calculator-heading {
+		max-width: 80%;
+	}
 	.bmi-calculator-heading .section-title{
 		font-size: 1.8rem;
 	}
