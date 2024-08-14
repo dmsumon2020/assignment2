@@ -526,7 +526,6 @@ table.weight-chart th {
 }
 /* meet our team section end */
 
-
 /* footer section starts */
 .footer{
 	background-color: rgba(255, 255, 255, 0.1);
@@ -654,6 +653,12 @@ table.weight-chart th {
 	}
 	/* banner section ends */
 
+	/* change your habit section starts */
+	.change-your-habits .habits .habit .text-description {
+		width: 80%;
+	}
+	/* change your habit section ends */
+
 	/* Run an Extra Mile Easily section starts */
 	.change-your-habits .habits {
 		margin-bottom: 4rem;
@@ -672,8 +677,8 @@ table.weight-chart th {
 	.run-an-extra-mile .run-an-extra-mile-wrapper .btn-primary{
 		width: 100%;
 	}
-	.run-an-extra-mile .run-an-extra-mile-wrapper .image{
-		max-width: 100%;;
+	.run-an-extra-mile .run-an-extra-mile-wrapper .image-container{
+		max-width: 100%;
 	}
 	/* Run an Extra Mile Easily section ends */
 	
@@ -714,16 +719,18 @@ table.weight-chart th {
 		margin-top: 23px;
 	}
 	section.bmi-calculator {
-		margin: 4rem 0;
+		margin: 0;
 	}
 	/* bmi calculator section ends */
 
 	/* Meet Our Team section starts  */
 	.meet-our-team .team-members {
-		grid-template-columns: 1fr; /* Changed to one column */
+		grid-template-columns: 1fr;
 		grid-template-rows: 1fr;
 	  }
-	  
+	.meet-our-team .team-members {
+		margin-top: 2rem;
+	}  
 	/* Meet Our Team section ends  */
 
 	/* footer section starts */
@@ -836,5 +843,4 @@ table.weight-chart th {
 		flex: 0 0 48%;
 	}	
 	/* footer section ends  */
-
 }
