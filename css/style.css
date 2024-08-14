@@ -501,7 +501,7 @@ table.weight-chart th {
 	height: 100%;
 	width: 100%;
 }
-.meet-our-team .team-members .team-member .overlay::before { /*CSS rule to put a shadow over images*/
+.meet-our-team .team-members .team-member .overlay::before {
 	content: '';
 	z-index: 10;
 	width: 100%;
