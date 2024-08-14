@@ -46,6 +46,7 @@ body{
 	font-size: 1.12rem;
 	line-height: 1.37rem;
 	font-weight: 600;
+	cursor: pointer;
 }
 .btn-secondary {
 	background-color: transparent;
@@ -56,6 +57,7 @@ body{
 	font-size: 1.12rem;
 	line-height: 1.37rem;
 	font-weight: 600;
+	cursor: pointer;
 }
 .text-description {
 	color: var(--primary-text-color);
