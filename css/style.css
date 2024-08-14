@@ -261,9 +261,18 @@ section, .footer .footer-wrapper {
 	border-radius: 18px;
 	box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
-.run-an-extra-mile .run-an-extra-mile-wrapper .image{
+.run-an-extra-mile .run-an-extra-mile-wrapper .image-container {
 	max-width: 40%;
+	overflow: hidden;
+	position: relative;
+	border-radius: 18px;
 }
+.run-an-extra-mile .run-an-extra-mile-wrapper .image-container img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	transform: scale(1.7);
+}	
 .run-an-extra-mile .run-an-extra-mile-wrapper .section-title,
 .run-an-extra-mile .run-an-extra-mile-wrapper .text-description{
     text-align: left;
@@ -271,9 +280,7 @@ section, .footer .footer-wrapper {
 .run-an-extra-mile .run-an-extra-mile-wrapper .text-description {
 	margin-bottom: 2rem;
 }
-.run-an-extra-mile .run-an-extra-mile-wrapper img{
-    border-radius: 18px;
-}
+
 /* run an extra mile section end */
 
 /* challenge-grid start */
@@ -290,7 +297,7 @@ section, .footer .footer-wrapper {
 
 .challenge-grid article {
 	display: flex;
-	align-items: stretch; /* This will ensure that children stretch to the height of the article */
+	align-items: stretch; 
 	justify-content: center;
 	background-color: #E6533C;
 }
@@ -586,7 +593,6 @@ table.weight-chart th {
 	.wrapper {
 		max-width: 100%;
 	}
-
 	.section-title {
 		font-size: 2rem;
 	}
@@ -683,6 +689,9 @@ table.weight-chart th {
 	/* challenge-grid ends  */
 
 	/* bmi calculator section starts */
+	.bmi-calculator-heading .section-title{
+		font-size: 1.8rem;
+	}
 	.bmi-calculator-wrapper {
 		max-width: 90%;
 		padding: 2rem 0;
