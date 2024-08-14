@@ -735,3 +735,106 @@ table.weight-chart th {
 }
 
 
+/* Medium devices: 576px to 992px */
+@media (min-width: 576px) and (max-width: 992px) {
+
+	/* common styles starts */
+	.section-title {
+		font-size: 2.25rem;
+	}
+	section, .footer .footer-wrapper, .wrapper {
+		max-width: 90%;
+	}	
+	/* common styles ends */
+
+	/* nav bar section starts*/
+	.nav-bar .nav-bar-wrapper {
+		padding: 3.5rem 0;
+		max-width: 100%;
+	}   
+	.run-an-extra-mile .run-an-extra-mile-wrapper .image-container {
+		max-width: 50%;
+	}	
+	/* nav bar section ends*/
+
+	/* header section starts */
+	.banner,
+	.banner-wrapper.wrapper{
+		max-width: 100%;
+	}
+	.banner .display-flex{
+		flex-direction: column;
+	}	
+	.banner-texts {
+		max-width: 70%;
+	}
+	.banner-image {
+		margin-top: 6rem;
+	}
+	/* header section ends */
+
+	/* Change Your Habits section starts*/
+	.change-your-habits .habits{
+		flex-wrap: wrap;
+		gap: 10px;
+	}
+	.change-your-habits .habits .habit{
+		flex: 1 1 calc(50% - 10px);
+		box-sizing: border-box;
+
+	}
+	/* Change Your Habits section ends*/
+
+	/* Run an Extra Mile section starts */
+	.run-an-extra-mile{
+		max-width: 90%;
+	}
+	.run-an-extra-mile .run-an-extra-mile-wrapper {
+		gap: 1rem;
+		padding: 2rem 1rem;
+	}
+	/* Run an Extra Mile section ends */
+
+	/* challenge section starts  */
+	.challenge-grid .challenge-grid-wrapper {
+		grid-template-columns: 1fr; 
+	}	
+	/* challenge section ends  */
+
+	/* bmi calculator section starts  */
+	.bmi-calculator-heading {
+		max-width: 90%;
+		margin: 4rem auto;
+	}
+	section.bmi-calculator {
+		margin: 0;
+	}
+	.bmi-calculator-wrapper {
+		max-width: 90%;
+	}	
+	.bmi-calculator-wrapper-inner {
+		flex-direction: column;
+	}	
+	.bmi-calculate {
+		margin-top: 3.5rem;
+	}
+	/* bmi calculator section ends  */
+
+	/* footer section starts  */
+	.footer .footer-wrapper{
+		flex-wrap: wrap; 
+		justify-content: start;
+	}
+	.footer .footer-wrapper > div{
+		box-sizing: border-box;
+	}
+	.footer .footer-wrapper .footer-logo {
+		flex: 0 0 100%; 
+		margin-bottom: 6rem;
+	}	
+	.footer .footer-wrapper .footer-links{
+		flex: 0 0 48%;
+	}	
+	/* footer section ends  */
+
+}
