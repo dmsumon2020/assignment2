@@ -512,6 +512,7 @@ table.weight-chart th {
 	position: absolute;
 	bottom: 5%;
 	left: 5%;
+	z-index: 100;
 }
 .meet-our-team .team-members .team-member .member-info h4 {
 	font-size: 1.25rem;
