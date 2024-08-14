@@ -625,8 +625,9 @@ table.weight-chart th {
 	.banner-texts p {
 		max-width: 70%;
 	}
-	.btn-primary, .btn-secondary{
-		padding: 16px 20px;
+	.btn-primary, .btn-secondary {
+		padding: 14px 13px;
+		font-size: 1rem;
 	}	
 	.banner-image .video-tutorial {
 		left: -4%;
