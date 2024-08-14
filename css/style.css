@@ -348,6 +348,7 @@ section, .footer .footer-wrapper {
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 0.8rem;
+	transition: opacity 0.5s ease;
 }
 
 .challenge-grid article .content a::after {
@@ -362,9 +363,11 @@ section, .footer .footer-wrapper {
 	background-color: #fff;
 	transition: width .3s ease-out;
 }
-
-.challenge-grid article .content span:hover a::after {
+.challenge-grid article .content:hover span a::after {
 	width: 100%;
+}
+.challenge-grid article .content:hover span a:hover{
+	opacity: 0.5;
 }
 .challenge-grid article .media a {
 	display: block;
